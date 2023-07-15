@@ -8,10 +8,9 @@ def apply_discount(price, percent):
     if percent >= 100:
         # If discount is 100% or more, the price is free.
         return 0
-    else:
-        # Otherwise, calculate the discounted price.
-        discount = price * percent / 100
-        return price - discount
+    # Otherwise, calculate the discounted price.
+    discount = price * percent / 100
+    return price - discount
 
 
 new_price = apply_discount(1000, percent=10)

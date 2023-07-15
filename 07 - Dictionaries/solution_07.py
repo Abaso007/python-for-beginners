@@ -6,10 +6,14 @@ You want to add a new item to the dictionary - an "entertainment" expense of $20
 You also spend an addition $12 on food and want to update the dictionary.
 """
 
-total_expenses = {"food": 40, "transport": 0, "shopping": 190}
 
-# Add an "entertainment" expense ($20)
-total_expenses["entertainment"] = 20
+total_expenses = {
+    "food": 40,
+    "transport": 0,
+    "shopping": 190,
+    "entertainment": 20,
+}
+
 # OR total_expenses.update({"entertainment": 20})
 # OR total_expenses["entertainment"] = total_expenses.get("entertainment", 0) + 20
 # What are the advantages of each way?
